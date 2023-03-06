@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ma liste de tâches</title>
+  </head>
+  <body>
+    <h1>Ma liste de tâches</h1>
+    <p id="intro">Veuillez ajouter vos premières tâches :</p>
+    <div class="dropdown">
+      <button onclick="filterTasksByStatus()" class="dropbtn">Filtrer par état</button>
+      <div id="statusDropdown" class="dropdown-content">
+        <a href="#" data-status="all">Toutes</a>
+        <a href="#" data-status="done">Terminées</a>
+        <a href="#" data-status="active">Actives</a>
+      </div>
+    </div>
+    <form>
+      <input type="text" id="new-task" placeholder="Ajouter une tâche...">
+      <button type="submit">Ajouter</button>
+    </form>
+    <ul id="task-list"></ul>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
